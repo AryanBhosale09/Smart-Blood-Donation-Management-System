@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Dashboard</title>
+    <link rel="stylesheet" href="BloodGroupInfo.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="main-header">
+        <h1>Blood Compatibility Dashboard</h1>
+        <p class="subtitle">System Status: <span class="pulse">●</span> All Donor Records Active</p>
+    </header>
+
+    <div class="top-row">
+        <div class="stat-card">
+            <span class="icon">🩸</span>
+            <div class="stat-info">
+                <h3>8 Blood Types</h3>
+                <p>A, B, AB, O (+/-)</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <span class="icon">🛡️</span>
+            <div class="stat-info">
+                <h3>1 Donation = 3 Lives</h3>
+                <p>Plasma, Platelets, Red Cells</p>
+            </div>
+        </div>
+        <div class="stat-card">
+            <span class="icon">⏱️</span>
+            <div class="stat-info">
+                <h3>Critical Need</h3>
+                <p>Every 2 seconds in the US</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="blood-grid">
+        <div class="blood-type-card">
+            <div class="card-header"><span class="drop">💧</span><span class="type">A+</span></div>
+            <p class="rarity">34% of Population</p>
+            <div class="compatibility">
+                <div class="comp-group"><label>DONATE TO</label><div class="tags"><span class="tag">A+</span><span class="tag">AB+</span></div></div>
+                <div class="comp-group"><label>RECEIVE FROM</label><div class="tags"><span class="tag green">A+</span><span class="tag green">A-</span><span class="tag green">O+</span><span class="tag green">O-</span></div></div>
+            </div>
+        </div>
+
+        <div class="blood-type-card">
+            <div class="card-header"><span class="drop">💧</span><span class="type">A-</span></div>
+            <p class="rarity">6% of Population</p>
+            <div class="compatibility">
+                <div class="comp-group"><label>DONATE TO</label><div class="tags"><span class="tag">A+</span><span class="tag">A-</span><span class="tag">AB+</span><span class="tag">AB-</span></div></div>
+                <div class="comp-group"><label>RECEIVE FROM</label><div class="tags"><span class="tag green">A-</span><span class="tag green">O-</span></div></div>
+            </div>
+        </div>
+
+        <div class="blood-type-card">
+            <div class="card-header"><span class="drop">💧</span><span class="type">B+</span></div>
+            <p class="rarity">9% of Population</p>
+            <div class="compatibility">
+                <div class="comp-group"><label>DONATE TO</label><div class="tags"><span class="tag">B+</span><span class="tag">AB+</span></div></div>
+                <div class="comp-group"><label>RECEIVE FROM</label><div class="tags"><span class="tag green">B+</span><span class="tag green">B-</span><span class="tag green">O+</span><span class="tag green">O-</span></div></div>
+            </div>
+        </div>
+
+        <div class="blood-type-card">
+            <div class="card-header"><span class="drop">💧</span><span class="type">B-</span></div>
+            <p class="rarity">2% of Population</p>
+            <div class="compatibility">
+                <div class="comp-group"><label>DONATE TO</label><div class="tags"><span class="tag">B+</span><span class="tag">B-</span><span class="tag">AB+</span><span class="tag">AB-</span></div></div>
+                <div class="comp-group"><label>RECEIVE FROM</label><div class="tags"><span class="tag green">B-</span><span class="tag green">O-</span></div></div>
+            </div>
+        </div>
+
+        <div class="blood-type-card special-receiver">
+            <div class="card-header"><span class="drop">💧</span><span class="type">AB+</span></div>
+            <div class="badge gold">Universal Receiver</div>
+            <div class="compatibility">
+                <div class="comp-group"><label>DONATE TO</label><div class="tags"><span class="tag">AB+</span></div></div>
+                <div class="comp-group"><label>RECEIVE FROM</label><div class="tags"><span class="tag green">ALL</span></div></div>
+            </div>
+        </div>
+
+        <div class="blood-type-card">
+            <div class="card-header"><span class="drop">💧</span><span class="type">AB-</span></div>
+            <p class="rarity">1% of Population</p>
+            <div class="compatibility">
+                <div class="comp-group"><label>DONATE TO</label><div class="tags"><span class="tag">AB+</span><span class="tag">AB-</span></div></div>
+                <div class="comp-group"><label>RECEIVE FROM</label><div class="tags"><span class="tag green">AB-</span><span class="tag green">A-</span><span class="tag green">B-</span><span class="tag green">O-</span></div></div>
+            </div>
+        </div>
+
+        <div class="blood-type-card">
+            <div class="card-header"><span class="drop">💧</span><span class="type">O+</span></div>
+            <p class="rarity">38% of Population</p>
+            <div class="compatibility">
+                <div class="comp-group"><label>DONATE TO</label><div class="tags"><span class="tag">O+</span><span class="tag">A+</span><span class="tag">B+</span><span class="tag">AB+</span></div></div>
+                <div class="comp-group"><label>RECEIVE FROM</label><div class="tags"><span class="tag green">O+</span><span class="tag green">O-</span></div></div>
+            </div>
+        </div>
+
+        <div class="blood-type-card special-donor">
+            <div class="card-header"><span class="drop">💧</span><span class="type">O-</span></div>
+            <div class="badge red">Universal Donor</div>
+            <div class="compatibility">
+                <div class="comp-group"><label>DONATE TO</label><div class="tags"><span class="tag">ALL</span></div></div>
+                <div class="comp-group"><label>RECEIVE FROM</label><div class="tags"><span class="tag green">O-</span></div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-grid">
+        <div class="info-panel">
+            <h3>Blood Donation Facts</h3>
+            <ul class="fact-list">
+                <li>One unit of blood (450ml) can save up to 3 lives</li>
+                <li>Healthy adults can donate every 3 months</li>
+                <li>Blood donation takes only 10-15 minutes</li>
+                <li>Your body replaces lost blood within 24-48 hours</li>
+                <li>O- is the universal donor, AB+ is universal receiver</li>
+                <li>Less than 5% of eligible donors donate annually</li>
+                <li>Blood cannot be manufactured, only donated</li>
+                <li>One accident victim can require up to 100 units</li>
+            </ul>
+        </div>
+
+        <div class="info-panel">
+            <h3>Who Can Donate?</h3>
+            <ul class="fact-list">
+                <li><strong>Age:</strong> 18-65 years old</li>
+                <li><strong>Weight:</strong> Minimum 50 kg (110 lbs)</li>
+                <li><strong>Health:</strong> Good general health</li>
+                <li><strong>Hemoglobin:</strong> Minimum 12.5 g/dL</li>
+                <li><strong>Frequency:</strong> Every 3 months for whole blood</li>
+                <li><strong>Avoid if:</strong> Recent illness, surgery, or tattoo</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="matrix-container">
+        <h3>Compatibility Matrix</h3>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Recipient ➔<br>Donor ↴</th>
+                        <th>O-</th><th>O+</th><th>A-</th><th>A+</th><th>B-</th><th>B+</th><th>AB-</th><th>AB+</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>O-</td><td class="yes">✔</td><td class="yes">✔</td><td class="yes">✔</td><td class="yes">✔</td><td class="yes">✔</td><td class="yes">✔</td><td class="yes">✔</td><td class="yes">✔</td></tr>
+                    <tr><td>O+</td><td class="no">✕</td><td class="yes">✔</td><td class="no">✕</td><td class="yes">✔</td><td class="no">✕</td><td class="yes">✔</td><td class="no">✕</td><td class="yes">✔</td></tr>
+                    <tr><td>A-</td><td class="no">✕</td><td class="no">✕</td><td class="yes">✔</td><td class="yes">✔</td><td class="no">✕</td><td class="no">✕</td><td class="yes">✔</td><td class="yes">✔</td></tr>
+                    <tr><td>A+</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="yes">✔</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="yes">✔</td></tr>
+                    <tr><td>B-</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="yes">✔</td><td class="yes">✔</td><td class="yes">✔</td><td class="yes">✔</td></tr>
+                    <tr><td>B+</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="yes">✔</td><td class="no">✕</td><td class="yes">✔</td></tr>
+                    <tr><td>AB-</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="yes">✔</td><td class="yes">✔</td></tr>
+                    <tr><td>AB+</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="no">✕</td><td class="yes">✔</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
